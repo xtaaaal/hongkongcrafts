@@ -1,0 +1,84 @@
+/*
+Theme Name: Minimal Grid
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+@media (min-width: 768px) {
+    .row [class*="col-sm"],
+    .row [class*="col-md"],
+    .row [class*="col-lg"] {
+        float: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .rtl .aside-menu {
+        right: 0;
+        left: inherit;
+    }
+
+    .rtl .menu-panel {
+        left: inherit;
+        right: -300px;
+    }
+
+    body.extended-menu .menu-panel {
+        left: inherit;
+        right: 50px;
+        transition: right 150ms;
+    }
+
+    body.extended-menu .site-content {
+        margin-left: auto;
+        margin-right: 300px;
+    }
+
+    .rtl .site-content {
+        margin-right: 50px;
+        transition: margin-right 150ms;
+        margin-left: auto;
+    }
+}
+
+.main-navigation .menu li a i {
+    left: 10px;
+    right: inherit;
+}
+
+
+
+.rtl .masonry-grid > article {
+    float: right;
+}
+
+.rtl .search-form label {
+    float: right;
+}
+
+.rtl .popup-search .search-form .search-submit {
+    float: left;
+}
+
+.rtl #scroll-up {
+    left: 15px;
+    right: inherit;
+}
+
+.rtl .minicart-section .minicart-title-handle {
+    left: inherit;
+    right: 0;
+}
+
+.rtl .minicart-section .minicart-content .site-header-cart {
+    border-left: 0;
+    border-right: 50px solid #fff;
+}
+
+.nav-right-options li:first-child {
+    float: left;
+}
