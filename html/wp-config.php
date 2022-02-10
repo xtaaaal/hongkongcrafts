@@ -124,11 +124,7 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 }
 
 /* That's all, stop editing! Happy publishing. */
-define('AS3CF_SETTINGS', serialize(array(
-	'provider' => 'aws',
-	'access-key-id' => 'AKIA4VVZH545L6KDPDNL',
-	'secret-access-key' => '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',
-)));
+
 /** Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
 	define('ABSPATH', __DIR__ . '/');
