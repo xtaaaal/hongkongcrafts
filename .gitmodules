@@ -1,0 +1,3 @@
+[submodule "https://github.com/xtaaaal/hongkongcrafts"] 
+  path = https://github.com/xtaaaal/hongkongcrafts 
+  url = git://https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront/
